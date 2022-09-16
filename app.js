@@ -72,3 +72,31 @@ const menSalaryTotal = userList
   .map((user) => (user.salary += 1000))
   .reduce((menSalaryTotal, menSalary) => menSalaryTotal + menSalary);
 console.log(menSalaryTotal);
+
+// MATH
+
+// nbre aleatoire entre 0 et 1
+const xRandom = Math.random();
+console.log(xRandom);
+
+// nbre aleatoire entre 0 et 100
+const xRandom100 = Math.random() * 100;
+console.log(xRandom100);
+
+// nbre entier aleatoire entre 0 et 100
+const xRandom100Int = Math.round(Math.random() * 100);
+console.log(xRandom100Int);
+
+// function loop() {
+
+// }
+// loop();
+
+for (let nbre = 0; nbre < 100; nbre++) {
+  const xRandom100Int = Math.round(Math.random() * 100);
+  //
+  if (xRandom100Int === 0 || xRandom100Int === 101) {
+    console.log("alert");
+    console.log(xRandom100Int);
+  }
+}
