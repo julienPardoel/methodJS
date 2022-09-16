@@ -1,4 +1,4 @@
-console.log("hello there");
+console.log("les Array..............................");
 
 // TRAITEMENT DES TABLEAUX
 
@@ -21,6 +21,7 @@ console.log(oddArr);
 
 const maxValueArr = someArr.reduce((max, e) => Math.max(max, e));
 console.log(maxValueArr);
+
 const minValueArr = someArr.reduce((min, e) => Math.min(min, e));
 console.log(minValueArr);
 
@@ -74,29 +75,47 @@ const menSalaryTotal = userList
 console.log(menSalaryTotal);
 
 // MATH
+console.log("les Math..........................");
 
-// nbre aleatoire entre 0 et 1
-const xRandom = Math.random();
-console.log(xRandom);
+// trouve un nombre decimal entre 0 et 1
+const randomX = Math.random();
+console.log(randomX);
 
-// nbre aleatoire entre 0 et 100
-const xRandom100 = Math.random() * 100;
-console.log(xRandom100);
+// trouve un nombre entier entre 0 et 10
+// arrondir à l'entier le plus proche
+const random0 = Math.round(randomX * 10);
+console.log(random0);
 
-// nbre entier aleatoire entre 0 et 100
-const xRandom100Int = Math.round(Math.random() * 100);
-console.log(xRandom100Int);
+// trouve un nombre entier entre 1 et 10
+// arrondir à l'entier supérieur
+const random1 = Math.ceil(randomX * 10);
+console.log(random1);
 
-// function loop() {
+// trouve un nombre entre 0 et 9
+// arrondir à l'entier inférieur
+const random2 = Math.floor(randomX * 10);
+console.log(random2);
 
-// }
-// loop();
+// constante d'euler
+const euler = Math.E;
+console.log(euler);
 
-for (let nbre = 0; nbre < 100; nbre++) {
-  const xRandom100Int = Math.round(Math.random() * 100);
-  //
-  if (xRandom100Int === 0 || xRandom100Int === 101) {
-    console.log("alert");
-    console.log(xRandom100Int);
-  }
-}
+// Pi
+const pi = Math.PI;
+console.log(pi);
+
+// trouve la valeur max2
+const maxValue = Math.max(11, 242, 3, 420, 50, 26, 75, 8, 9);
+console.log(maxValue);
+
+// trouve la valeur min
+const minValue = Math.min(4405, 877, 5584, 5436, 1247, 420, 478, 3194);
+console.log(minValue);
+
+// eleve un nombre x a sa puissance x2 (x, x2)
+const puissance = Math.pow(2, 3);
+console.log(puissance);
+
+// calcul la racine carrée
+const racine = Math.sqrt(4);
+console.log(racine);
