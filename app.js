@@ -123,3 +123,47 @@ console.log(racine);
 // retire la partie decimale d'un nombre
 const trunc = Math.trunc(25.258);
 console.log(trunc);
+
+// FUNCTION
+console.log("les function.............................");
+
+// anciennes versions
+
+function testFunction(nom) {
+  console.log("ceci n'est pas un test");
+  document.write("hello " + nom);
+}
+
+const bonjour = function (nom) {
+  console.log("bonjour " + nom);
+};
+
+// version moderne
+
+const hola = (nom) => {
+  console.log("hola " + nom);
+};
+
+const sum = (n1, n2) => {
+  console.log(n1 + n2);
+};
+
+const start = () => {
+  testFunction("maurice");
+  bonjour("toto");
+  hola("tata");
+  sum(4, 3);
+};
+start();
+
+// fonction delai en ms
+
+setTimeout(() => {
+  console.log("il etait temps");
+}, 4000);
+
+// fonction au click
+
+window.addEventListener("click", () => {
+  console.log("click");
+});
