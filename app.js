@@ -119,3 +119,7 @@ console.log(puissance);
 // calcul la racine carrée
 const racine = Math.sqrt(4);
 console.log(racine);
+
+// retire la partie decimale d'un nombre
+const trunc = Math.trunc(25.258);
+console.log(trunc);
